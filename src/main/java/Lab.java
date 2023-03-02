@@ -15,6 +15,10 @@ public class Lab {
      * @return true if there is a successful login, and false otherwise.
      */
     public boolean login(String username, String password){
-        return false;
-    }
+        return "admin".equals(username) && "qwerty".equals(password) ||
+        "user".equals(username) && "password".equals(password);
+
+
+    //Don't use String equality using == ,use .equals for Strings
+}
 }
